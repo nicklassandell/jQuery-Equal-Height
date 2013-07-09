@@ -1,0 +1,107 @@
+/*==========  Basics  ==========*/
+
+body {
+	margin: 0px; padding: 0px;
+	background: #275E89;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #CCE0F2;
+}
+
+p {
+	margin: 0px 0px 15px 0px;
+}
+
+
+
+
+/*==========  Grids and columns  ==========*/
+
+.split-3, .split-5 {
+	margin: 50px 100px;
+	overflow: hidden;
+
+	.column {
+		float: left;
+		background: #1F4A6D;
+
+		p:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	.inner-padding {
+		margin: 40px;
+	}
+}
+
+.split-3 .column {
+	width: 30%;
+	margin-right: 3.3%;
+}
+.split-5 .column {
+	width: 18%;
+	margin-right: 2%;
+	*margin-right: 1.9%;
+}
+
+
+
+
+/*==========  Misc  ==========*/
+
+.actions {
+	display: block;
+	text-align: center;
+	margin: 50px 0px;
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+
+		&.status-on, .status-off {
+			.clearfix;
+
+			.text-holder, .code-holder {
+				padding: 8px 20px;
+				float: left;
+			}
+			.text-holder {
+				color: #CCE0F2;
+				background: #1C4261;
+			}
+			.code-holder {
+				color: #183E5F;
+				background: #C5D7E4;
+				font-family: Monaco, "Andale Mono", "Courier New", monospace;
+				font-size: 12px;
+			}
+		}
+
+		&.status-on .status-off {
+			display: none;
+		}
+		&.status-off .status-on {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+/*==========  Mixins  ==========*/
+
+.clearfix() {
+	*zoom: 1; // IE hack
+
+	.cf:before, .cf:after {
+		content: " ";
+		display: table;
+	}
+	.cf:after {
+		clear: both;
+	}
+}

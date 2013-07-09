@@ -1,0 +1,95 @@
+/*==========  Basics  ==========*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #275e89;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #cce0f2;
+}
+p {
+  margin: 0px 0px 15px 0px;
+}
+/*==========  Grids and columns  ==========*/
+
+.split-3,
+.split-5 {
+  margin: 50px 100px;
+  overflow: hidden;
+}
+.split-3 .column,
+.split-5 .column {
+  float: left;
+  background: #1f4a6d;
+}
+.split-3 .column p:last-child,
+.split-5 .column p:last-child {
+  margin-bottom: 0px;
+}
+.split-3 .inner-padding,
+.split-5 .inner-padding {
+  margin: 40px;
+}
+.split-3 .column {
+  width: 30%;
+  margin-right: 3.3%;
+}
+.split-5 .column {
+  width: 18%;
+  margin-right: 2%;
+  *margin-right: 1.9%;
+}
+/*==========  Misc  ==========*/
+
+.actions {
+  display: block;
+  text-align: center;
+  margin: 50px 0px;
+}
+.actions a {
+  display: inline-block;
+  text-decoration: none;
+}
+.actions a.status-on,
+.actions a .status-off {
+  *zoom: 1;
+}
+.actions a.status-on .cf:before,
+.actions a .status-off .cf:before,
+.actions a.status-on .cf:after,
+.actions a .status-off .cf:after {
+  content: " ";
+  display: table;
+}
+.actions a.status-on .cf:after,
+.actions a .status-off .cf:after {
+  clear: both;
+}
+.actions a.status-on .text-holder,
+.actions a .status-off .text-holder,
+.actions a.status-on .code-holder,
+.actions a .status-off .code-holder {
+  padding: 8px 20px;
+  float: left;
+}
+.actions a.status-on .text-holder,
+.actions a .status-off .text-holder {
+  color: #cce0f2;
+  background: #1c4261;
+}
+.actions a.status-on .code-holder,
+.actions a .status-off .code-holder {
+  color: #183e5f;
+  background: #c5d7e4;
+  font-family: Monaco, "Andale Mono", "Courier New", monospace;
+  font-size: 12px;
+}
+.actions a.status-on .status-off {
+  display: none;
+}
+.actions a.status-off .status-on {
+  display: none;
+}
+/*==========  Mixins  ==========*/
