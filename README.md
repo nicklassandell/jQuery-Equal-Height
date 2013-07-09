@@ -12,8 +12,10 @@ See the demo folder for a working live demo of the plugin.
 Include the script *after* the jQuery library has loded:
 
     <script src="/path/to/jquery.equalHeight.js"></script>
+        
+The plugin requires jQuery 1.4 or higher.
     	
-The plugin will fire itself off autmatically on `document.ready()`.
+The plugin will run autmatically on `document.ready()`, see alternative options for enabling/disabling below.
 
 ## Usage
 
