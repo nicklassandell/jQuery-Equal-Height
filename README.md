@@ -1,5 +1,7 @@
 # jquery.equalHeight
 
+A simple, lightweight and responsive jQuery plugin for aligning the heights of a set of elements.
+
 See the demo folder for a working demo of the plugin.
 
 ## Installation
