@@ -2,10 +2,7 @@
 
 A simple, lightweight and responsive jQuery plugin for aligning the heights of a set of elements.
 
-See the demo folder for a working live demo of the plugin.
-
-![Before](http://i.imgur.com/vz7etyL.png)
-![After](http://i.imgur.com/HbytTcA.png)
+[Here's a working live demo of the plugin.](http://vobpler.bitbucket.org/jquery-equalheight/)
 
 ## Installation
 
