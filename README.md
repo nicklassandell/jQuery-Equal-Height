@@ -1,4 +1,4 @@
-# jquery.equalHeight
+# jQuery.equalHeight()
 
 A simple, lightweight and responsive jQuery plugin for aligning the heights of a set of elements.
 
@@ -16,13 +16,13 @@ The plugin will run autmatically on `document.ready()`, see alternative options 
 
 ## Usage
 
-Applying the plugin is super easy. Each group of elements need an identifier that will be used to group the elements together. This allows you to use the plugin on multiple different gruops of elements on the same page. Below is an example of three different elements in the same group.
+Applying the plugin is super easy. Each group of elements need an identifier that will be used to group the elements together. Example of a group:
 
     <div class="box" data-equal-height="example"></div>
     <div class="box" data-equal-height="example"></div>
     <div class="box" data-equal-height="example"></div>
     	
-By using different identifiers you can use it on different groups of elements:
+Example of multiple groups:
 
     <div class="box-1" data-equal-height="exampleOne"></div>
     <div class="box-1" data-equal-height="exampleOne"></div>
@@ -44,7 +44,7 @@ The `equalheight('identifier')` function will simply add the `data-equal-height=
 
 ## Browser support
 
-The plugin has been tested as far back as Internet Explorer 6, it works in all standard web browsers.
+The plugin has been tested as far back as Internet Explorer 6, it Should Work <sup>tm</sup> in all standard web browsers.
 
 ## Found a bug?
 
